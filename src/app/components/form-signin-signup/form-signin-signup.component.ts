@@ -59,7 +59,7 @@ export class FormSigninSignupComponent implements OnInit {
       case Const.SIGNIN:
         this.createAuthenticatedUser();
         this._autenticationService.connecterClient(this.authenticatedUser).subscribe();
-        console.log('ok in signin');
+        this._route.navigate(['/dashboard']);
 
         break;
 

@@ -8,6 +8,8 @@ import { FormSigninSignupModule } from './components/form-signin-signup/form-sig
 import { HomePageModule } from './pages/home-page/home-page.module';
 import { AuthenticationPageModule } from './pages/authentication-page/authentication-page.module';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardClientModule } from './pages/dashboard-client/dashboard-client.module';
+import { CarouselModule } from './components/carousel/carousel.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormSigninSignupModule,
     HomePageModule,
     AuthenticationPageModule,
-    HttpClientModule
+    HttpClientModule,
+    DashboardClientModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
