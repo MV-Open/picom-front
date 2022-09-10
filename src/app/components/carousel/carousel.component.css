@@ -1,0 +1,10 @@
+carousel {
+    width: 70%;
+    margin: auto;
+}
+
+.annonce {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}

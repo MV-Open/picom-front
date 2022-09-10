@@ -1,4 +1,4 @@
 export class AuthenticatedUserModel {
-    email!: string;
-    motDePasse!: string;
+    email: string;
+    motDePasse: string;
 }
