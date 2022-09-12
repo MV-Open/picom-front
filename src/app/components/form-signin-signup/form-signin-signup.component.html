@@ -1,5 +1,5 @@
 <div class="form">
-    <h2 *ngIf=userState>Créez votre compte Picon</h2>
+    <h2 *ngIf=userState>Créez votre compte Picom</h2>
     <h2 *ngIf=!userState>Connexion Picom</h2>
     <form class="w-50 " [formGroup]="formSign" (ngSubmit)="submitForm()">
         <div class="form-group mb-2" *ngIf=userState>
