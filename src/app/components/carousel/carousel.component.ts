@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AnnonceModel } from 'src/app/model/annonce.model';
+import { AnnonceService } from 'src/app/services/annonce.service';
 
 @Component({
   selector: 'app-carousel',
@@ -8,33 +10,16 @@ import { AnnonceModel } from 'src/app/model/annonce.model';
 })
 export class CarouselComponent implements OnInit {
 
-  annonces: AnnonceModel[] = [
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    },
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    },
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    },
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    },
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    },
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    },
-    {
-      contenu: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut accusantium iusto adipisci tempora ad illum. Provident culpa deleniti eveniet corporis reiciendis similique voluptates, tempore laudantium cupiditate. Animi, vel maiores.'
-    }
-  ];
+  annonces: AnnonceModel[] = [];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private _annonceService: AnnonceService,
+    private _route: Router) {
   }
 
+  ngOnInit(): void {
+    this._annonceService.recupererAnnonces().subscribe(annonce => {
+      console.log(annonce);
+      this.annonces = annonce;
+    });
+  }
 }

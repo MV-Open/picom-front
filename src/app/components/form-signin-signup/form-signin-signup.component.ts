@@ -13,7 +13,7 @@ import { Const } from 'src/app/utils/const';
 })
 export class FormSigninSignupComponent implements OnInit {
 
-  private _userState!: string;
+  private _userState: string;
   client: ClientModel = new ClientModel();
   authenticatedUser: AuthenticatedUserModel = new AuthenticatedUserModel();
 

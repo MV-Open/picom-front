@@ -9,7 +9,7 @@ import { ClientModel } from '../model/client.model';
 })
 export class AuthenticationService {
 
-  // on va tenter de sauver en mémoire l'état de userState pour la vue suivante
+  // on va sauver en mémoire l'état de userState pour la vue suivante
   userState: BehaviorSubject<string> = new BehaviorSubject<string>('');
 
   URL = 'http://localhost:8080/api';
