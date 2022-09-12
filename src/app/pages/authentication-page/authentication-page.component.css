@@ -1,0 +1,16 @@
+.authentication {
+    display: flex;
+    height: 90vh
+}
+
+.picture {
+    width: 40%;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
