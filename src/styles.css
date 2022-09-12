@@ -8,10 +8,6 @@
     --blueGreen: #3F826D;
 }
 
-/* html, body {
-    height: 100vh;
-} */
-
 .container-main {
     height: 90vh;
 }
@@ -20,11 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height:38px;
+    min-width: 180px;
 }
 
 .button-primary {
-    height:38px;
-    max-width: 180px;
     border-radius: 5px;
     background-color: var(--red);
     border: 2px solid var(--red);
@@ -37,8 +33,6 @@
 }
 
 .button-secondary {
-    height:38px;
-    max-width: 180px;
     border-radius: 5px;
     background-color: var(--white);
     border: 2px solid var(--red);
