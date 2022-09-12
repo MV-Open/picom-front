@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+/*colors variable*/
+:root {
+    --red: #EA5455;
+    --redLogo: #A7425C;
+    --white: #F7F7FF;
+    --sand: #F2D0A4;
+    --blueGreen: #3F826D;
+}
+
+/* html, body {
+    height: 100vh;
+} */
+
+.container-main {
+    height: 90vh;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-primary {
+    height:38px;
+    max-width: 180px;
+    border-radius: 5px;
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    color: var(--white);
+}
+
+.button-primary:hover {
+    background-color: var(--redLogo);
+    border: 2px solid var(--redLogo);
+}
+
+.button-secondary {
+    height:38px;
+    max-width: 180px;
+    border-radius: 5px;
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    color: var(--black);
+}
+
+.button-secondary:hover {
+    background-color: var(--white);
+    border: 2px solid var(--redLogo);
+    color: var(--redLogo);
+}
