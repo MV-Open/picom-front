@@ -26,7 +26,7 @@ h2 {
     margin-bottom: 3rem;
     padding: 2rem;
     margin-right: 2rem;
-    border: 2px solid black;
+    border: 3px solid var(--sand);
     border-radius: 5px;
     overflow: scroll;
 }
