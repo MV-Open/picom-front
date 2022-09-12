@@ -3,6 +3,7 @@
 
     <div class="dashboard__annonces">
         <div class="annonce" *ngFor="let annonce of annonces">{{annonce}}</div>
+        <h4 *ngIf="annonces.length === 0">Vous n'avez pas encore d'annonces, cliquez sur "Ajouter une annonce" !</h4>
     </div>
 
     <button type="button" class="btn btn-success button-primary"><span>+</span>Ajouter une annonce</button>

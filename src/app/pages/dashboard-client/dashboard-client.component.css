@@ -9,6 +9,10 @@ h2 {
     padding: 2rem 0px;
 }
 
+h4 {
+    margin: auto;
+}
+
 .dashboard__annonces {
     height: 420px;
     border-top: 5px solid var(--red);
