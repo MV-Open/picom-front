@@ -1,1 +1,10 @@
-<app-carousel></app-carousel>
+<div class="dashboard">
+    <h2>Vos Annonces</h2>
+
+    <div class="dashboard__annonces">
+        <div class="annonce" *ngFor="let annonce of annonces">{{annonce}}</div>
+    </div>
+
+    <button type="button" class="btn btn-success button-primary"><span>+</span>Ajouter une annonce</button>
+
+</div>

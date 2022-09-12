@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardClientComponent implements OnInit {
 
+  public annonces: string[] = [
+    'Annonce1', 'Annonce2', 'Annonce3', 'Annonce4', 'Annonce5', 'Annonce6', 'Annonce7', 'Annonce8'
+  ]
   constructor() { }
 
   ngOnInit(): void {
